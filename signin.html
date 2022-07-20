@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIOMART SIGNIN</title>
+</head>
+<style>
+  body {
+    height: auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    display: flex;
+  }
+  #container .image{
+         width: 90%; 
+      }
+      img{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px; 
+      }
+
+  h2 {
+    text-align: left;
+    padding-top: 15px;
+  }
+    p{
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 7px;
+      }
+
+  form {
+    width: 650px;
+    padding: 0px 120px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(242, 237, 237);
+    outline: none;
+    margin-top: 25px;
+    height: 20px;
+  }
+
+  input[type="submit"] {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    background-color: rgb(23, 148, 250);
+    color: white;
+    font-size: 30px;
+    cursor: pointer; 
+    border-radius: 100%;
+    margin: 10px 180px;
+  }
+
+  .bottom{
+        width: 23%;
+        text-align: center;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .bottom>p{
+        text-align: center;
+        font-size: 15px;
+      }
+      .bottom>p a{
+        color: red;
+        text-decoration: none;
+      }
+
+</style>
+
+<body>
+
+  <div id="container">
+
+    <div class="image">
+        <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
+      </div>
+
+    <form>
+        
+    <h2>Sign in</h2>
+    <p>Sign in to access your Orders, Offers and Wishlist.</p> 
+      <input id="email" type="email" placeholder="Enter Email" />
+      <input id="password" type="password" placeholder="Enter Password" />
+      <input id="phone" type="number" placeholder="Enter your mobile no" />
+      <input type="submit" value=">"  />
+
+    </form>
+  </div>
+  <div class="bottom">
+    <p>By continuing you agree to our <a href="#">Terms and service</a> and
+        <a href="#"> Privacy  & Legal Policy.</a>
+   </p>
+  </div>
+</body>
+
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", login);
+
+  function login() {
+    event.preventDefault();
+    let loginObj = {
+      Email: document.querySelector("#email").value,
+      Password: document.querySelector("#password").value,
+    }
+
+    let SignupObjArr = JSON.parse(localStorage.getItem("JioSignupList")) || [];
+    //console.log(SignupObjArr)
+    // console.log("loginobj", loginObjArr);
+    let flag = false;
+    for (let i = 0; i < SignupObjArr.length; i++) {
+      if (loginObj.Email == SignupObjArr[i].personEmail && loginObj.Password == SignupObjArr[i].personPassword) {
+
+        flag = true;
+      }
+
+    }
+  
+    if (flag==true) {
+
+        window.location.href="index.html";
+
+    //   alert("login successful");
+    } else {
+      alert("Check your email id or password");
+    }
+
+    if(loginObj.Email=="" || loginObj.Password =="" ){
+        
+        alert("Fill all the boxes");
+        window.location.href="signin.html";
+     }
+     
+  }
+  
+</script>
