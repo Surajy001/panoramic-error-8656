@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="http://fonts.cdnfonts.com/css/spartan-mb" rel="stylesheet">
+    <title> JIOMART HOME PAGE </title>
+    <link rel="stylesheet" href="homepage.css" />
+    <style>
+
+body{
+    margin: 0;
+}
+
+.container{
+     width: auto;
+     height: auto;
+
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    grid-template:auto;
+
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 0px;
+    border: px solid black;
+}
+
+    .header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+  .content-large{
+ 
+     grid-row-start:2;
+     grid-row-end: 4; 
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+  }
+
+      .footer{
+        grid-column-start:1 ;
+        grid-column-end: span 3;
+      }
+   
+
+      /*   Section part CSS     */
+
+  .top{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  img{
+    width: 100%;
+  }
+  .top>div{
+   margin-left: 20px;
+   margin-right: 20px;
+  }
+
+  h3{
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+      
+.middle{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: 0 30px;
+    cursor: pointer;
+}
+       .box{
+           width: 200px;
+           transform: .1s;
+       }
+
+        .box img{
+           display: block;
+           width: 90%;
+        }
+
+        .box:hover{
+             transform: scale(1.05);
+             z-index:1 ;
+        }
+
+
+           /*   Footer part CSS     */
+
+
+ .footer{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: left; 
+    background-color: rgba(232, 237, 237, 0.988);
+ }
+
+    .footer p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 0px;
+        color: rgb(93, 87, 87);
+    }
+
+    .footer a{
+        display: flex;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+  h5{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: -0px;
+ }
+
+ .first,.second,.third{
+     margin-top: 30px; 
+     height: 450px;
+ }
+
+ .third p{
+     line-height: -0px;
+     margin-top: 0px;
+     display: flex;
+     width: 300px;
+ }
+ 
+    .third img{
+      width: 100px;
+      gap: 100px;  
+    }
+
+    .bottom{
+        width:209% ; 
+        margin: -10px  ;
+        display: flex;
+        background-color: rgba(232, 237, 237, 0.988);
+        gap:50px
+    }
+
+    .bottom p{
+        font-size:15px ;
+        font-weight: 300;
+        margin-left: 97px;
+        color:rgb(48, 47, 47);
+    }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="container">
+
+       <!--     Header part Start     -->
+
+        <div class="header">
+
+            <section id="navbar1">
+
+                <div class="active"><a  href="#"><i class="fa-solid fa-bars"></i></a></div> 
+               <div class="icon"> JioMart <br> <p>BETA</p>  <img src=""> </div>  
+                 <div class="search"><input type="text"  placeholder="Search essentials, groceries, and more....">
+                            <span> <i class="fa-solid fa-bars"></i></span></div>
+         
+         <div id="nav"> 
+
+               <ul class="login">
+               <li> <a  href="./signup.html">  <i class="fa-solid fa-user">  </i> Sign in / Sign up  </a> </li>
+               <li> <a  href="#" > <i class="fa-thin fa-square-list"></i><i class="fa-solid fa-cart-shopping"></i>  Cart </a> </li>
+              </ul>
+            
+            </div> 
+                 </section>
+
+             <section id="navbar2">
+         
+                 <a href="">  Groceries <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="">Premium Fruits <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="#">Home & Kitchen <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="#"> Fashion <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="#"> Electronics <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="#"> Beauty <i class="fa-solid fa-angle-down"></i></a>
+                 <a href="#"> Jewellery <i class="fa-solid fa-angle-down"></i></a>
+                </section>
+            
+        </div>
+
+                <!-- Header part End      -->
+
+          <!--     Section part Start     -->
+
+         <div class="content-large">
+
+       <section class="top">
+            
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1658244944_1658232168_Dairy-Bakery_1680-x-320-_sugar-strip.jpg" alt="">
+        <div>
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1656959459_monsoon-umberalla_1280-x-137.jpg" alt=""> 
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1654714506_Free-Home-Delivery--strip-1240-X-162.jpg" alt="">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1658255337_July_20_Slim-banner-web.jpg" alt="">  
+        </div>
+
+    </section>
+
+    <h3>Shop from Top Categories</h3>
+
+    <section class="middle">
+
+      <div class="box">   
+         <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109073_1654018509_Fruits-Veg.jpg" alt="1">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109088_1654018530_Beverage-Corner.jpg" alt="">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109143_1656693044_Foodgrains-Oils.jpg" alt="">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109179_1654018570_Snacks-FOOD.jpg" alt="">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109205_1654018587_Home-care.jpg" alt="">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109260_1654018604_personal-Care.jpg" alt="">
+      </div>
+
+      <div class="box">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109280_1654018629_Dairy-Bakery.jpg" alt="">
+      </div>
+
+    </section>
+
+         </div>
+
+        <!--     Section part End     -->
+
+
+       <!--     Footer part start     -->
+
+        <div class="footer">
+ 
+            <div class="first">
+
+                <h5>MOST POPULAR CATEGORIES</h3>
+                <a href=""><p>Staples</p> </a>
+                <a href=""><p>Staples</p> </a>
+                <a href=""><p>Beverages</p> </a>
+                <a href=""><p>Personal Care</p> </a>
+                <a href=""><p>Home Care</p></a> 
+                <a href=""><p>Fruits and Vegetables</p></a>  
+                <a href=""><p> Baby Care</p></a> 
+                <a href=""><p>Snacks & Branded Foods</p></a>    
+                <a href=""><p>Dairy & Bakery</p></a>  
+            </div>
+
+            <div class="second">
+
+                <h5>CUSTOMER SERVICES</h3>
+               <a href=""><p>About Us</p></a> 
+               <a href=""><p>FAQ</p></a> 
+               <a href=""><p>Terms and conditions</p></a> 
+               <a href=""><p>Privacy policy</p></a> 
+               <a href=""><p>E-waste Policy</p></a>
+               <a href=""><p>Cancellation and return policy </p></a> 
+            </div>
+
+            <div class="third">
+
+                <h5>CONTACT US</h5><br>
+                <p>WhatsApp us :<a href=""> 70003 70003</a> </p><br>
+                <p>Call Us : <a href="">1800 890 1222</a></p>
+                <p>8:00 AM to 8:00 PM, 365 days</p><br>
+                <p>Please note that you are accessing the BETA</p>       
+                <p> Version of <a href="#">www.jiomart.com</a> </p> <br>
+                <p>Should you encounter any bugs, glitches, lack</p> 
+                <p>of functionality, delayed deliveries, billing errors </p> 
+                <p>or other problems on the beta website, please </p> 
+                <p> email us on <a href="#">cs@jiomart.com </a> </p><br>
+                <h5>DOWNLOAD APP</h5>
+                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
+                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
+            </div>      
+           
+        </div> 
+
+        <section class="bottom"  >
+         <p>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+ </p>
+         <p> © 2022 All rights reserved. Reliance Retail Ltd.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>

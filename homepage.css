@@ -1,0 +1,108 @@
+
+/*   header part CSS     */
+            
+#navbar1{
+    display: flex;
+    width: 100%;
+    background: #1f91ee;
+    justify-content: space-evenly;
+    height: 80px;
+}  
+
+.active{
+    width:25px;
+    margin-left: 60px;
+}
+
+.active i{
+     font-size: 30px;
+     color: white;
+     margin-top: 25px;
+     
+}
+
+.icon{
+    width:120px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;  
+}
+
+.icon>p{
+    font-size: 12px;
+    margin-top: -7px;
+    margin-left: 75px;
+    color: white;
+    text-decoration: none;
+}
+
+.search{
+    width: 650px;
+    display: flex;
+    margin: auto 0;
+    height: 40px;
+    line-height: 35px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    background: white ;
+    height: 100%;
+    padding:  0px 10px;
+    font-size: 15px;
+    width: 700px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search span{
+    font-size: 15px;
+    background: white ;
+    padding:  5px 24px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;    
+}
+
+#nav{
+    width: 250px;
+   margin-left: -20px;
+}
+  
+.login{
+     margin-top: 30px;
+     margin-left: -35px;
+ }
+
+#navbar1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+#navbar1 ul li a{
+color: white;
+font-size:15px ;
+text-decoration: none;
+}
+
+#navbar2{
+ display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 20px 80px;
+background-color: rgb(217, 227, 236);
+height: 12px;
+}
+#navbar2 a{
+text-decoration: none;
+color: black;
+font-weight: 600;
+font-family: calibri ;
+font-size: 16px;
+}
