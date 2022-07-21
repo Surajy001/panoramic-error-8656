@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title> JIOMART SIGNUP </title>
+
+    <style>
+  
+       body{
+        height: auto;
+        align-items: center;
+         font-family: 'Roboto',sans-serif; 
+      }
+     
+      #container{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 15px;
+        display: flex;
+      }
+      #container .image{
+         width: 80%; 
+      }
+      img{
+        border-top-left-radius: 15px; 
+      }
+      
+      form{
+        width: 550px;
+        margin-left: -40px;
+        padding: 0px  100px;
+      }
+
+    h1{
+        text-align: left;
+        margin-top: 50px;
+      }
+
+      p{
+        text-align: left;
+        margin-top: -25px;
+        padding-top: 20px;
+      }
+       form label{
+        display: flex;
+       margin-top: 50px;
+       width: 100%;
+      }
+      form input{
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid rgb(242, 237, 237);
+        outline: none;
+        margin-top:25px ;
+        height: 20px;
+      }
+      input[type="checkbox"]{
+        margin: auto;
+        margin-right:-120px ;
+      }
+      input[type="submit"]{
+          width: 110%;
+          height: 40px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: rgb(23, 148, 250);
+          color: white;
+          font-size: 15px;
+          cursor: pointer;
+      }
+      .pass{
+        font-size: 12px;
+        padding-top: 25px;
+      }
+     
+      #otp{
+        margin-top: 0px;
+        width: 100%;
+      }
+      .bottom{
+        width: 23%;
+        text-align: center;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .bottom>p{
+        text-align: center;
+      }
+      .bottom>p a{
+        color: red;
+        text-decoration: none;
+       
+      }
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="container">
+
+          <div class="image">
+            <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
+          </div>
+
+       
+        <form>
+            <h1>Sign up</h1>
+            <p>Please enter your details.</p>
+          <input id="Fname" type="text" placeholder="Your First Name" />
+          <input id="Lname" type="text" placeholder="Your Last Name" />
+          <input id="email" type="email" placeholder="Enter your Email Id" />
+          <input id="password" type="password" placeholder="Enter your Password" />
+          <p class="pass">Use 8 or more characters with a mix of letters & numbers </p>
+          <input id="Vpassword" type="password" placeholder="Enter your Password" />
+          
+          <div class="whatsapp">
+            <label for="">
+                Enable order updates and important information on Whatsapp  
+                 <input id="box" type="checkbox" ></label>     
+          </div>
+          
+          <h1>Verify</h1>
+          <p>We have sent 6 digit OTP on +91</p>
+         <input id="otp" type="number" placeholder="Enter your OTP">
+          <input type="submit" value="Verify" >
+        </form>
+      </div>
+
+      <div class="bottom">
+        <p>By continuing you agree to our <a href="#">Terms and service</a> and
+            <a href="#"> Privacy  & Legal Policy.</a>
+       </p>
+      </div>
+      
+      
+</body>
+</html>
+
+<script>
+
+document.querySelector("form").addEventListener("submit",Signup);
+    //let SignupObjArr=[];   
+    let SignupObjArr=JSON.parse(localStorage.getItem("JioSignupList")) || [];
+    //console.log(SignupObjArr) ;
+
+    function Signup(){
+        event.preventDefault();
+        let SignupObj={
+          personFName:document.querySelector("#Fname").value,
+          personLName:document.querySelector("#Lname").value,
+          personEmail:document.querySelector("#email").value,
+          personPassword:document.querySelector("#password").value,
+          personVPassword:document.querySelector("#Vpassword").value,
+        }
+       // console.log(SignupObj);
+       SignupObjArr.push(SignupObj);
+       localStorage.setItem("JioSignupList",JSON.stringify(SignupObjArr));
+         
+       window.location.href="signin.html";
+
+       if(SignupObj.personFName=="" || SignupObj.personLName=="" || SignupObj.personEmail=="" || SignupObj.personPassword=="" || loginObj.personVPassword =="" ){   
+        alert("Fill all the boxes");
+        window.location.href="signup.html";
+       }
+    }
+</script>
