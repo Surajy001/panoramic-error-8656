@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+
+    <style>
+
+        .item{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+
+        }
+     </style>
+
+<div  class="item">
+
+</div>
+
 </head>
 <body>
     
 </body>
 </html>
+
+
+<script>
+
+
+let GetAdditem=JSON.parse(localStorage.getItem("Add-Cart"))   || [];
+      displayitem(GetAdditem);
+
+
+   function displayitem(GetAdditem){
+  
+    document.querySelector("div").innerHTML="";
+        GetAdditem.forEach(function(elem,index) {
+            let div=document.createElement("div");
+
+            let image=document.createElement("img");
+            image.setAttribute("src",elem.image)
+         
+            let proName=document.createElement("h3");
+            proName.innerText=elem.name;
+
+            let proPrice=document.createElement("h2");
+            proPrice.innerText=elem.price;
+
+            let button1=document.createElement("button");
+              button1.innerText="-"
+              button1.addEventListener("click",function(){
+                     deleteItem(index);
+                     
+              });
+
+
+            div.append(image,proName,proPrice,button1,)
+
+            document.querySelector(".item").append(div);
+    
+        });
+
+   }
+
+        function deleteItem(elem,index){
+           // console.log("click");
+         
+            GetAdditem.splice(index,1)
+            localStorage.setItem("Add-Cart",JSON.stringify(GetAdditem));
+            displayitem(GetAdditem);
+           // console.log(deleteData)
+        }
+
+
+     </script>
+
