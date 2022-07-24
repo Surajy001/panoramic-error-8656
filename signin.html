@@ -5,152 +5,249 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JIOMART SIGNIN</title>
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="http://fonts.cdnfonts.com/css/spartan-mb" rel="stylesheet">
+ 
+  <title>JIOMART SIGNIN CLONE</title>
+
+  <link rel="stylesheet" href="header.css" />
 <style>
+
   body {
+    margin: 0;
     height: auto;
     align-items: center;
     font-family: 'Roboto', sans-serif;
   }
 
-  #container {
-    width: 80%;
-    height: auto;
+    
+.container{
+     width: auto;
+     height: auto;
+
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template:auto;
+
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 0px;
+    border: px solid black;
+}   
+  
+#header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+ #middle{
+    grid-row-start:2;
+    grid-row-end: 4; 
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+  } 
+
+  .content {
+    width: 75%;
+    height: 92%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 15px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 120px;
   }
-  #container .image{
+  img{
          width: 90%; 
-      }
-      img{
-        border-top-left-radius: 15px;
+         height: 95%;
+         height: 100%;
+         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px; 
       }
-
+      
   h2 {
     text-align: left;
     padding-top: 15px;
   }
-    p{
+
+  p{
+       font-size: 15px;
+       font-weight: 500;
+       color: rgb(67, 64, 64);
         text-align: left;
         margin-top: 5px;
         margin-left: 7px;
       }
 
-  form {
-    width: 650px;
-    padding: 0px 120px;
-  }
-
   form input {
-    width: 100%;
+    width: 80%;
     padding: 12px;
     border-radius: 5px;
     border: 1px solid rgb(242, 237, 237);
     outline: none;
     margin-top: 25px;
     height: 20px;
+    display: flex;
   }
 
   input[type="submit"] {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-top: 20px;
     background-color: rgb(23, 148, 250);
     color: white;
     font-size: 30px;
     cursor: pointer; 
     border-radius: 100%;
-    margin: 10px 180px;
+    margin-left: 180px;
+    text-align: center;
   }
 
   .bottom{
-        width: 23%;
+        width: 28%;
+        height: 30px;
         text-align: center;
         font-size: 15px;
-        margin: auto;
-        margin-top: 20px;
+        margin-left: 600px;
       }
+
       .bottom>p{
         text-align: center;
-        font-size: 15px;
+        font-size: 13px; 
       }
+
       .bottom>p a{
         color: red;
-        text-decoration: none;
+        text-decoration: none; 
       }
+      
 
 </style>
 
+</head>
+
 <body>
 
-  <div id="container">
+
+     <div class="container"> 
+
+         <!--     header part start     -->
+  
+  <div id="header">
+
+    <section id="navbar1">
+
+        <div class="active"><a  href="#"><i class="fa-solid fa-bars"></i></a></div> 
+       <div class="icon"> JioMart <br> <p>BETA</p>  </div>  
+         <div class="search"><input type="text"  placeholder="Search essentials, groceries, and more....">
+                    <span> <i class="fa-solid fa-bars"></i></span></div>
+ 
+ <div id="nav"> 
+
+       <ul class="login">
+       <li> <a  href="./signup.html">  <i class="fa-solid fa-user">  </i> Sign in   </a> </li>
+       <li> <a  href="cartpage.html" > <i class="fa-thin fa-square-list"></i><i class="fa-solid fa-cart-shopping"></i>  Cart </a> </li>
+      </ul>
+    
+    </div> 
+         </section>
+
+     <section id="navbar2">
+
+         <a href=""> <i class="fa-solid fa-location-dot"></i> &nbsp; Deliver to <br> &emsp; &nbsp;  700001</br> </a>
+         <a href="groceries.html">  Groceries <i class="fa-solid fa-angle-down"></i></a>
+         <a href="">Premium Fruits <i class="fa-solid fa-angle-down"></i></a>
+         <a href="#">Home & Kitchen <i class="fa-solid fa-angle-down"></i></a>
+         <a href="#"> Fashion <i class="fa-solid fa-angle-down"></i></a>
+         <a href="#"> Electronics <i class="fa-solid fa-angle-down"></i></a>
+         <a href="#"> Beauty <i class="fa-solid fa-angle-down"></i></a>
+         <a href="#"> Jewellery <i class="fa-solid fa-angle-down"></i></a>
+        </section>
+    
+   </div>
+             <!--     header part end     -->
+
+            <!--     Signin part start     -->
+
+
+    <div id="middle">
+
+       <div  class="content">
 
     <div class="image">
         <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
       </div>
-
-    <form>
+    
+    <div class="sign-form">   
+      <form>
         
     <h2>Sign in</h2>
+
     <p>Sign in to access your Orders, Offers and Wishlist.</p> 
       <input id="email" type="email" placeholder="Enter Email" />
-      <input id="password" type="password" placeholder="Enter Password" />
       <input id="phone" type="number" placeholder="Enter your mobile no" />
-      <input type="submit" value=">"  />
-
+      
+      <input type="submit" value=" >"  />
     </form>
+   
+       </div> 
+
+    </div>
+
+    </div>
+
+    <div class="bottom">
+        <p>By continuing you agree to our <a href="#">Terms and service</a> and
+            <a href="#"> Privacy  & Legal Policy.</a>
+       </p>
+    
+      </div>
+
   </div>
-  <div class="bottom">
-    <p>By continuing you agree to our <a href="#">Terms and service</a> and
-        <a href="#"> Privacy  & Legal Policy.</a>
-   </p>
-  </div>
+
+  
+
 </body>
 
 </html>
 
 <script>
-  document.querySelector("form").addEventListener("submit", login);
 
-  function login() {
-    event.preventDefault();
-    let loginObj = {
-      Email: document.querySelector("#email").value,
-      Password: document.querySelector("#password").value,
-    }
+     
+document.querySelector("form").addEventListener("submit",login);
+    //let SignupObjArr=[];   
+    let loginObjArr=JSON.parse(localStorage.getItem("JioSigninList")) || [];
+    //console.log(SignupObjArr) ;
 
-    let SignupObjArr = JSON.parse(localStorage.getItem("JioSignupList")) || [];
-    //console.log(SignupObjArr)
-    // console.log("loginobj", loginObjArr);
-    let flag = false;
-    for (let i = 0; i < SignupObjArr.length; i++) {
-      if (loginObj.Email == SignupObjArr[i].personEmail && loginObj.Password == SignupObjArr[i].personPassword) {
+    function login(){
+        event.preventDefault();
+        let loginObj={
+    
+          personEmail:document.querySelector("#email").value,
+          personPhone:document.querySelector("#phone").value,
+        }
+       // console.log(SignupObj);
+       loginObjArr.push(loginObj);
+       localStorage.setItem("JioSigninList",JSON.stringify(loginObjArr));
+      
+       window.location.href="signup.html";
 
-        flag = true;
-      }
-
-    }
-  
-    if (flag==true) {
-
-        window.location.href="index.html";
-
-    //   alert("login successful");
-    } else {
-      alert("Check your email id or password");
-    }
-
-    if(loginObj.Email=="" || loginObj.Password =="" ){
-        
+       if(loginObj.personEmail=="" ||  loginObj.personPhone =="" ){   
         alert("Fill all the boxes");
         window.location.href="signin.html";
-     }
-     
-  }
+
+       }
+    }
+
   
 </script>

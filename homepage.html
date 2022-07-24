@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="http://fonts.cdnfonts.com/css/spartan-mb" rel="stylesheet">
-    <title> JIOMART HOME PAGE </title>
+    <title> JIOMART HOME PAGE CLONE </title>
     <link rel="stylesheet" href="homepage.css" />
     <style>
 
@@ -39,10 +39,12 @@ body{
     .header{
     grid-column-start: 1;
     grid-column-end: 4;
+
+    grid-row-start:1;
+     grid-row-end: 2;
 }
 
   .content-large{
- 
      grid-row-start:2;
      grid-row-end: 4; 
 
@@ -51,11 +53,25 @@ body{
 
   }
 
-      .footer{
+       .footer{
+      grid-row-start:4;
+       grid-row-end: 5; 
+
         grid-column-start:1 ;
         grid-column-end: span 3;
       }
    
+      .bottom{
+        grid-row-start:5;
+        grid-row-end: 6; 
+
+        grid-column-start:1 ;
+        grid-column-end: span 3;
+
+        gap: 0px;
+      }
+
+
 
       /*   Section part CSS     */
 
@@ -64,9 +80,11 @@ body{
     height: auto;
     margin-top: 20px;
   }
+
   img{
     width: 100%;
   }
+
   .top>div{
    margin-left: 20px;
    margin-right: 20px;
@@ -133,31 +151,37 @@ body{
 
  .first,.second,.third{
      margin-top: 30px; 
-     height: 450px;
+     height: auto;
+ }
+
+ .third{
+     display: grid;
+     grid-template-rows: 280px 100px;
+     gap: 10px;
  }
 
  .third p{
      line-height: -0px;
      margin-top: 0px;
      display: flex;
-     width: 300px;
+     gap: 10px;
  }
  
-    .third img{
-      width: 100px;
-      gap: 100px;  
-    }
+#image{  
+    height: 30px;
+    display: flex;
+    gap: 10px;
+ }
 
     .bottom{
-        width:209% ; 
-        margin: -10px  ;
+        margin-top: -10px  ;
         display: flex;
         background-color: rgba(232, 237, 237, 0.988);
-        gap:50px
+        justify-content: space-evenly;
     }
 
     .bottom p{
-        font-size:15px ;
+        font-size:12px ;
         font-weight: 300;
         margin-left: 97px;
         color:rgb(48, 47, 47);
@@ -293,6 +317,7 @@ body{
 
             <div class="third">
 
+              <div>
                 <h5>CONTACT US</h5><br>
                 <p>WhatsApp us :<a href=""> 70003 70003</a> </p><br>
                 <p>Call Us : <a href="">1800 890 1222</a></p>
@@ -304,9 +329,16 @@ body{
                 <p>or other problems on the beta website, please </p> 
                 <p> email us on <a href="#">cs@jiomart.com </a> </p><br>
                 <h5>DOWNLOAD APP</h5>
+              </div>
+
+              <div id="image">
+                 
                 <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
                 <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
-            </div>      
+              </div>
+           
+           
+              </div>      
            
         </div> 
 

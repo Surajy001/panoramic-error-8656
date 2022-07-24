@@ -5,55 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title> JIOMART SIGNUP </title>
-
+    <title> JIOMART SIGNUP CLONE </title>
+    <link rel="stylesheet" href="header.css" />
     <style>
   
        body{
+        margin: 0;
         height: auto;
         align-items: center;
          font-family: 'Roboto',sans-serif; 
       }
-     
-      #container{
+
+
+
+       
+.container{
+     width: auto;
+     height: auto;
+
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template:auto;
+
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 0px;
+    border: px solid rgb(228, 24, 24);
+}   
+
+    
+#header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#middle-signup{
+    grid-row-start:2;
+    grid-row-end: 4; 
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+  }
+
+      .content{
         width: 80%;
         height: auto;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 50px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 15px;
-        display: flex;
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 120px;
+    gap: 120px;
       }
-      #container .image{
-         width: 80%; 
+
+       .image{
+         width: 90%; 
       }
+
       img{
-        border-top-left-radius: 15px; 
+        border-top-left-radius: 15px;
+        width: 100%;  
       }
       
       form{
-        width: 550px;
-        margin-left: -40px;
-        padding: 0px  100px;
+        padding: 0px  10px;
       }
 
-    h1{
+    h2{
         text-align: left;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-left: -10px;
       }
 
       p{
         text-align: left;
-        margin-top: -25px;
-        padding-top: 20px;
+        margin-top: -20px;
+        padding-top: -20px;
+        font-size: 15px;
+       font-weight: 500;
       }
+
        form label{
         display: flex;
-       margin-top: 50px;
-       width: 100%;
+       margin-top: 30px;
+       width: 90%;
+       font-size: 15px;
+       font-weight:100;
       }
+
       form input{
-        width: 100%;
+        width: 80%;
         padding: 12px;
         border-radius: 5px;
         border: 1px solid rgb(242, 237, 237);
@@ -61,14 +113,16 @@
         margin-top:25px ;
         height: 20px;
       }
+
       input[type="checkbox"]{
-        margin: auto;
-        margin-right:-120px ;
+        width: 30px;
+        margin-top: 30px;
       }
+
       input[type="submit"]{
-          width: 110%;
+          width: 90%;
           height: 40px;
-          margin-top: 30px;
+          margin-top: 40px;
           margin-bottom: 30px;
           background-color: rgb(23, 148, 250);
           color: white;
@@ -80,20 +134,29 @@
         padding-top: 25px;
       }
      
-      #otp{
-        margin-top: 0px;
-        width: 100%;
+      h1{
+        font-size: 30px;
+        margin-bottom: 35px;
       }
-      .bottom{
+
+        #otp{
+        margin-top: 0px;
+        width: 80%;
+      }
+
+       .bottom{
         width: 23%;
+        height: 30px;
         text-align: center;
         font-size: 15px;
         margin: auto;
-        margin-top: 20px;
-      }
+        margin-top: 30px; 
+       }
+
       .bottom>p{
         text-align: center;
-      }
+      } 
+
       .bottom>p a{
         color: red;
         text-decoration: none;
@@ -105,15 +168,62 @@
 <body>
     
 
-    <div id="container">
+    <div class="container"> 
+
+        <!--     header part start     -->
+ 
+ <div id="header">
+
+   <section id="navbar1">
+
+       <div class="active"><a  href="#"><i class="fa-solid fa-bars"></i></a></div> 
+      <div class="icon"> JioMart <br> <p>BETA</p>  </div>  
+        <div class="search"><input type="text"  placeholder="Search essentials, groceries, and more....">
+                   <span> <i class="fa-solid fa-bars"></i></span></div>
+
+<div id="nav"> 
+
+      <ul class="login">
+      <li> <a  href="./signin.html">  <i class="fa-solid fa-user">  </i> Sign in </a> </li>
+      <li> <a  href="cartpage.html" > <i class="fa-thin fa-square-list"></i><i class="fa-solid fa-cart-shopping"></i>  Cart </a> </li>
+     </ul>
+   
+   </div> 
+        </section>
+
+    <section id="navbar2">
+          
+        <a href=""> <i class="fa-solid fa-location-dot"></i> &nbsp; Deliver to <br> &emsp; &nbsp;  700001</br> </a>
+        <a href="groceries.html">  Groceries <i class="fa-solid fa-angle-down"></i></a>
+        <a href="">Premium Fruits <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#">Home & Kitchen <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#"> Fashion <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#"> Electronics <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#"> Beauty <i class="fa-solid fa-angle-down"></i></a>
+        <a href="#"> Jewellery <i class="fa-solid fa-angle-down"></i></a>
+       </section>
+   
+  </div>
+            <!--     header part end     -->
+
+
+      <!--     Signup part start     -->
+
+
+            <div id="middle-signup">
+                
+           
+
+              <div class="content">
 
           <div class="image">
             <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
           </div>
-
+      
+          <div class="signup-form"> 
        
         <form>
-            <h1>Sign up</h1>
+            <h2>Sign up</h2>
             <p>Please enter your details.</p>
           <input id="Fname" type="text" placeholder="Your First Name" />
           <input id="Lname" type="text" placeholder="Your Last Name" />
@@ -122,59 +232,86 @@
           <p class="pass">Use 8 or more characters with a mix of letters & numbers </p>
           <input id="Vpassword" type="password" placeholder="Enter your Password" />
           
-          <div class="whatsapp">
             <label for="">
-                Enable order updates and important information on Whatsapp  
-                 <input id="box" type="checkbox" ></label>     
-          </div>
-          
+           <h4>Enable order updates and important information on Whatsapp</h4>   
+           <input id="box" type="checkbox" ></label>     
           <h1>Verify</h1>
           <p>We have sent 6 digit OTP on +91</p>
          <input id="otp" type="number" placeholder="Enter your OTP">
           <input type="submit" value="Verify" >
         </form>
+
       </div>
 
-      <div class="bottom">
+       </div>
+
+     </div>
+      
+     </div>
+
+          <div class="bottom">
         <p>By continuing you agree to our <a href="#">Terms and service</a> and
             <a href="#"> Privacy  & Legal Policy.</a>
-       </p>
-      </div>
-      
-      
+       </p> 
+
+    </div>
+
 </body>
 </html>
 
 <script>
 
-document.querySelector("form").addEventListener("submit",Signup);
-    //let SignupObjArr=[];   
-    let SignupObjArr=JSON.parse(localStorage.getItem("JioSignupList")) || [];
-    //console.log(SignupObjArr) ;
+  document.querySelector("form").addEventListener("submit", Signup);
 
-    function Signup(){
-        event.preventDefault();
-        let SignupObj={
-          personFName:document.querySelector("#Fname").value,
-          personLName:document.querySelector("#Lname").value,
-          personEmail:document.querySelector("#email").value,
-          personPassword:document.querySelector("#password").value,
-          personVPassword:document.querySelector("#Vpassword").value,
-        }
-       // console.log(SignupObj);
-       SignupObjArr.push(SignupObj);
-       localStorage.setItem("JioSignupList",JSON.stringify(SignupObjArr));
-         
-       window.location.href="signin.html";
+ let SignupObjArr=JSON.parse(localStorage.getItem("JIOSignupList")) || [];
 
-       if(SignupObj.personFName=="" || SignupObj.personLName=="" || SignupObj.personEmail=="" || SignupObj.personPassword=="" || loginObj.personVPassword =="" ){   
-        alert("Fill all the boxes");
-        window.location.href="signup.html";
-       }
+  function Signup() {
+    event.preventDefault();
+    let SignupObj = {
+
+      Email: document.querySelector("#email").value,
+      Otp: document.querySelector("#otp").value,
+
+           personFName:document.querySelector("#Fname").value,
+           personLName:document.querySelector("#Lname").value,
+           Password: document.querySelector("#password").value,
+           personVPassword:document.querySelector("#Vpassword").value,
+    } 
+      
+         SignupObjArr.push(SignupObj);
+        localStorage.setItem("JIOSignupList",JSON.stringify(SignupObjArr));
+
+    let loginObjArr = JSON.parse(localStorage.getItem("JioSigninList")) || [];
+    //console.log(SignupObjArr)
+    // console.log("loginobj", loginObjArr);
+
+    let flag = false;
+    for (let i = 0; i < loginObjArr.length; i++) {
+      if (SignupObj.Email == loginObjArr[i].personEmail  && SignupObj.Otp == loginObjArr[i].personPhone){
+                   flag = true;
+      }
+
+    }
+  
+    if (flag==true) {
+        window.location.href="homepage.html";
+
+    //   alert("login successful");
+    } else {
+      alert("Check your Email id or OTP");
     }
 
+        
+  if(SignupObj.personFName=="" || SignupObj.personLName=="" || SignupObj.personVPassword == "" 
+  || SignupObj.Email=="" || SignupObj.Otp==""  || SignupObj.Password==""   ){                  
+            // alert("Fill all the boxes");
+       // window.location.href="signup.html";
+
+        window.location.href="signup.html";
+
+     }
+
+       }
 
 
-
-    
 </script>
