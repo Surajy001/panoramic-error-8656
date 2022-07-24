@@ -1,0 +1,392 @@
+
+
+
+   
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+
+.container{
+
+     width: auto;
+      height: auto; 
+
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    
+    grid-template:auto;
+
+    gap: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding: 0px;
+    border: px solid black;
+}
+
+    .header{
+     
+    grid-column-start: 1;
+    grid-column-end:  4;
+}
+
+     .header-bottom{
+      grid-column-start: 1;
+       grid-column-end:  4;
+       grid-row-start:2;
+       grid-row-end: 3; 
+
+     }
+
+  .content-large{
+ 
+    grid-row-start:3;
+     grid-row-end: 5; 
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+        display: grid;
+        grid-template-columns: 23% 77%;
+        gap: -0px;
+
+  }
+
+      .footer{
+        grid-column-start:1 ;
+        grid-column-end: span 3;
+
+        grid-row-start:5;
+        grid-row-end: 6; 
+
+      }
+
+       
+      .bottom{
+        grid-row-start:6;
+        grid-row-end: 7; 
+
+        grid-column-start:1 ;
+        grid-column-end: span 3;
+
+        gap: 0px;
+      }
+      
+
+      .header-bottom>div>p{
+           margin-left: 20px;
+           font-size: 14px;
+      }
+
+
+
+    /*   --------------Sectiion part CSS---------------     */
+
+       
+    .left{  
+             width: 80%;
+             margin: auto;            
+             margin-left: 15px;
+             display: grid;
+             grid-template-rows: repeat(2, auto) ;
+             gap: 30px;
+             margin-top: 0px;
+        }
+
+      #left-top{
+        border-radius: 10px;
+        background-color: #fff;;;
+      }
+
+      #left-bottom{
+        border-radius: 10px;
+        background-color: #fff;
+
+      }
+
+      .left p{
+          color: rgb(32, 28, 28);
+          font-size: 18px;
+          font-weight: 100;
+          margin-left: -20px;
+        }
+
+        a{
+          text-decoration: none;
+          color: rgba(6, 2, 2, 0.579);
+          font-size: 15px;
+          font-weight: 500;
+          margin-left: -20px;
+        }
+
+        li{
+          list-style: none;
+          
+        }
+
+        hr{
+          width: 100%;
+          margin-left: -18px;
+          margin-top: 2px;
+          background-color:  #fff
+        }
+
+        #left-bottom hr{
+          margin-top: 8px;
+        }
+
+        #left-bottom li{
+          margin-top: -9px;
+        }
+          
+        #left-bottom a{
+          font-size: 12px;
+        }
+
+         #search{
+          margin-left: -15px;
+          line-height: 30px;
+          width: 195px;
+          background-color: #f3f3f3;
+         border: none;
+         border-radius: 5px;
+        }
+
+     .right{ 
+        display: grid;
+        grid-template-rows: 251px 80px auto;
+        gap: 10px;
+
+     }   
+
+     /* #right-top{
+     } */
+
+     #right-top>img{
+      width: 100%;
+      height: 250px ;
+     }
+
+     #right-middle{
+      display: flex;
+      justify-content: space-between;
+      gap: 200px;
+
+     }
+
+    .word{
+      border: 5px solid brown;
+      width: 300px;
+    }
+
+
+    .sort{
+      margin: auto;
+    }
+
+    button{
+      height: 30px;
+      border-radius:5px ;
+      border: none;
+      background-color: #fff;
+      width: 120px;
+    }
+
+
+     #right-middle>p{
+      margin:30px;
+      margin-left: 0px;
+     }
+
+     #right-bottom{
+      display: grid;
+      grid-template-rows: 50px auto;
+      background-color: #fff;
+     }
+
+     #right-bottom1{
+      width: 97%;
+      margin: auto;
+     }
+
+     #right-bottom1>p{
+      margin-left: 2px;
+      font-size: 15px;
+      font-weight: 600;
+     }
+
+     #right-bottom20{
+      width: 99%;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(5,1fr);
+      gap: 10px 0px ;
+      margin: auto;
+      background-color: #fff;
+      margin-bottom: 80px;
+
+     }
+
+     #right-bottom20>div{
+      border-radius: 10px;
+      margin: auto;
+     } 
+
+     #right-bottom20>div>img{
+      height: 140px;
+      border-top-left-radius: 10px;
+      border-top-right-radius:10px ;
+      margin: auto;
+      margin-top: 15px;
+      margin-left:50px ;
+     }
+
+     #right-bottom20>div>h5{
+      margin-left:20px ;
+      line-height: 16px;
+      width: 220px;
+      height: 10px;
+     }
+
+     #right-bottom20>div>h4{
+      margin-left:20px ;
+      margin-top: 32px;
+     }
+
+     #right-bottom20>div>button{
+      height: 40px;
+      border-radius: 5px;
+      background-color: blue;
+      color: white;
+      width: 240px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 20px;
+      border: 0px ;
+      margin: auto;
+      margin-left:16px ;
+      margin-right:16px;
+      margin-bottom:10px;
+     }
+
+     .right-bottom3{
+      margin: auto;
+      margin-top: -50px;
+     }
+
+     .right-bottom3>button{
+
+      height: 30px;
+        width: 30px;
+        text-align: center; 
+        border-radius:5px ;
+        border: 0px;
+     }
+
+       #large-buttom{
+        height: 30px;
+        width: 50px; 
+        text-align: center; 
+        font-size: 11px;
+       }
+
+
+
+
+   /*   ---------------Footer part CSS----------------------     */
+
+
+    
+.footer{
+  width: auto;
+  height:370px;
+  display: flex;
+  justify-content: space-around;
+  text-align: left; 
+  background-color: rgba(232, 237, 237, 0.988);
+  margin-top: 50px;
+}
+ 
+  .footer p{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 0px;
+      color: rgb(93, 87, 87);
+  }
+
+  .footer a{
+      display: flex;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-decoration: none;
+     
+  }
+
+h5{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: -0px;
+
+
+  /* margin-left: -40px; */
+  text-align: left;
+}
+
+.first,.second,.third{
+   margin-top: 30px; 
+   height: auto;
+   width: 350px;
+}
+
+   .first a, .second a{
+    margin: auto;
+   }
+
+
+.third{
+   display: grid;
+   grid-template-rows: 280px 100px;
+   gap: 10px;
+}
+
+.third p, .third a{
+  line-height: -0px;
+  margin-top: 0px;
+   display: flex;
+   gap: 30px;
+
+}
+.third a{
+  color: blue;
+}
+
+#image{   
+
+  height: 30px;
+  display: flex;
+  gap: 10px;
+}
+ 
+  .bottom{
+      margin: -10px  ;  
+      display: flex;
+      background-color: rgba(232, 237, 237, 0.988);
+      margin-right: 0px;
+      justify-content: space-evenly;
+      border-top: 1px solid rgb(201, 197, 197);  
+  }
+
+  .bottom p{
+      font-size:12px ;
+      font-weight: 300;
+      margin-left: 97px;
+      color:rgb(48, 47, 47);
+  }
