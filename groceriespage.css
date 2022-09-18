@@ -230,6 +230,7 @@ body{
    }
 
    #right-bottom2>div{
+    border: 1px solid black;
     border-radius: 10px;
     margin: auto;
    } 
